@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', Arial, sans-serif;
+}
+
+
+body{
+
+    background-image:
+            linear-gradient(
+                    rgba(0,0,0,0.55),
+                    rgba(0,0,0,0.55)
+            ),
+            url("logo.png");
+
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center;
+
+}
+
+
+/* HEADER */
+
+header{
+
+    width:100%;
+    background:#003366;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    color:white;
+
+}
+
+
+.logo{
+
+    display:flex;
+    align-items:center;
+
+}
+
+
+.logo img{
+
+    width:70px;
+    height:70px;
+    margin-right:15px;
+
+}
+
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-size:18px;
+
+}
+
+
+nav a:hover{
+
+    color:#ffd700;
+
+}
+
+
+
+/* HERO */
+
+.hero{
+
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+
+}
+
+
+.hero-content h1{
+
+    font-size:55px;
+    margin-bottom:20px;
+
+}
+
+
+.hero-content p{
+
+    font-size:22px;
+    margin-bottom:30px;
+
+}
+
+
+button{
+
+    background:#ff9800;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    font-size:18px;
+    border-radius:30px;
+    cursor:pointer;
+
+}
+
+
+button:hover{
+
+    background:#e65100;
+
+}
+
+
+
+/* CONTENT BOX */
+
+.box{
+
+    background:white;
+    margin:40px;
+    padding:40px;
+    border-radius:15px;
+    opacity:0.95;
+
+}
+
+
+.box h2,
+.admission h2{
+
+    text-align:center;
+    color:#003366;
+    margin-bottom:20px;
+
+}
+
+
+.box p{
+
+    font-size:18px;
+    line-height:1.6;
+
+}
+
+
+
+/* COURSE CARDS */
+
+
+.cards{
+
+    display:flex;
+    gap:25px;
+    justify-content:center;
+    flex-wrap:wrap;
+
+}
+
+
+.card{
+
+    width:250px;
+    background:#003366;
+    color:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+
+}
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+    transition:0.3s;
+
+}
+
+
+
+/* ADMISSION */
+
+.admission{
+
+    background:#0066cc;
+    color:white;
+    text-align:center;
+    padding:40px;
+    margin:40px;
+    border-radius:15px;
+
+}
+
+
+.admission h2{
+
+    color:white;
+
+}
+
+
+
+/* FOOTER */
+
+footer{
+
+    background:#001a33;
+    color:white;
+    text-align:center;
+    padding:20px;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header{
+
+        flex-direction:column;
+
+    }
+
+    nav{
+
+        margin-top:15px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:35px;
+
+    }
+
+}
